@@ -1,0 +1,441 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*=======================================*/
+
+html, body{
+	font-family: TimesNRMTStd-Cond;
+	line-height:115% !important;
+	font-size:28px !important;
+	letter-spacing:0.03em;
+	margin:0;
+	padding:0;
+	box-sizing:none;
+	border:0;
+}
+
+a{
+	text-decoration:none;
+	color:black;
+}
+
+.black{
+	color:black;
+}
+
+div.a{
+position:fixed;
+z-index:99;
+}
+
+.smileyface{
+	position:absolute;
+	z-index:99;
+	width:100%;
+	height:100%;
+}
+
+/*.blurbackground{
+	position:absolute;
+	z-index:98;
+	width:100%;
+	height:100%;
+	background:white;
+	opacity:0.3;
+	filter: blur(30px);
+}*/
+
+.ghost{
+	width:200px;
+	height:200px;
+}
+
+.topnav {
+	display:absolute;
+	padding:20px;
+	margin: 0px 0px 0px 0px;
+	width:100%;
+	top:0;
+	z-index:10;
+}
+
+.topnav p{
+	font-size:28px;
+	float:left;
+	padding-right:35px;
+}
+
+p{
+	font-size:28px;
+	font-family: TimesNRMTStd-Cond;
+	letter-spacing:0.03em;
+	line-height:115%;
+	color:#d0d1d4;
+}
+
+.black{
+	color:black;
+}
+
+.hover:hover{
+	color:black;
+}
+
+
+.slideButtons{
+}
+
+.prev.next{
+	margin-top:50px;
+}
+
+.prev {
+	position:absolute;
+	left:0px;
+	width:50%;
+	height:100%;
+	background:red;
+	opacity:0;
+	z-index:2;
+}
+
+.next {
+	position:absolute;
+	right:0;
+	width:50%;
+	height:100%;
+	background:blue;
+	opacity:0;
+	z-index:2;
+}
+
+.prev:hover{
+	cursor: url(https://image.ibb.co/mFXK7w/left.png), auto !important;
+	z-index:2;
+}
+
+
+.next:hover{
+	cursor: url(https://image.ibb.co/hOH80G/right.png), auto !important;
+	z-index:2;
+}
+
+.justify-center{
+	display: flex;
+ 	justify-content: center;
+}
+
+.description-expand{
+	position:absolute;
+	width:600px;
+	z-index:900;
+}
+
+
+.information-expand{
+/*	display:none;*/
+	position:absolute;
+	width:250px;
+	z-index:900;
+}
+
+.projects-expand{
+	position:absolute;
+	z-index:900;
+}
+
+.projects-expand2{
+	position:absolute;
+	z-index:900;
+}
+
+
+.col {
+  	padding-right:15px;
+}
+
+.TimesNRMTStd-Cond {
+	font-family: TimesNRMTStd-Cond;
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.topmargin{
+	top:-30px;
+}
+
+.greytype {
+	color: grey !important;;
+}
+
+.whitetype {
+	color:white;
+}
+
+.flushright {
+	text-align:right;
+}
+
+
+
+/*img{
+	height:900px;
+}*/
+
+
+.exit-toggle {
+	float:right;
+	height:30px;
+	margin-right:50px;
+	display:none;
+}
+
+.exit-toggle:hover {
+	cursor:url('https://ibb.co/eRKQVG'),auto;
+}
+
+.projects-toggle:hover{
+	cursor:pointer;
+}
+
+.information-toggle:hover{
+	cursor:pointer;
+}
+
+.description-toggle:hover{
+	cursor:pointer;
+}
+
+
+.backtoimages:hover{
+	cursor:pointer;
+}
+
+.gallery {
+ 	display:flex;
+ 	justify-content: center;
+ 	z-index:1;
+}
+
+.gallery ul{
+	list-style-type: none;
+}
+
+.gallery li{
+	list-style-type: none;
+	display:none;
+}
+
+.gallery li:first-child{
+	display:block;
+}
+
+.gallery img{
+	height:950px;
+}
+
+.relativepositioning{
+	position:relative;
+}
+
+.splash p{
+	position:absolute;
+	height:100%;
+	width:100%;
+	background:white;
+	z-index:999;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:200px;
+	line-height:90%;
+	text-align:center;
+	letter-spacing:-1px;
+	color:black;
+}
+
+/*======================*/
+
+.projects{
+	position:relative;
+	margin:0 auto;
+}
+
+.projects img{
+	display: inline-block;
+	width:45%;
+	margin-left:30px;
+	margin-right:30px;
+}
+
+.project-img{
+	position:relative;
+}
+
+.projects li{
+	margin-bottom:45px;
+}
+
+.backtoimages{
+	display:none;
+}
+
+.projects p{
+	position:absolute;
+}
+
+.container{
+	margin-top:120px;
+	width:100%;
+	text-align:center;
+}
+
+.project-title {
+	position:absolute;
+}
+
+.container{
+	z-index:999;
+}
+
+.lineheight{
+	display:block;
+	height:15px;
+}
+
+.grey{
+	color:#d0d1d4;
+}
+
+/*==============*/
+
+.projects-content, .projects-filter, .projects-list, .table-row, .item-table-date, .item-table-title, .item-table-type, .item-table-materials{
+	text-align:left;
+}
+
+.projects-content{
+	margin: 0, auto;
+	padding: 0 30px 0 30px;
+}
+
+.table-row{
+	position:relative;
+	overflow:hidden;
+}
+
+.table-row::before{
+	content:"";
+	display:table;
+
+}
+
+.table-row::after{
+	content: "";
+	position:absolute;
+	height:1px;
+	width:100%;
+	background:black;
+	bottom:0;
+}
+
+.table-row::after{
+	clear:both;
+}
+.table-row::after{
+	display:table;
+}
+
+.item-table-date{
+	width: 6.99187%;
+	float:left;
+	margin-right:1.46341%;
+}
+
+.item-table-title {
+	width: 47.72358%;
+    float: left;
+    margin-right: 1.46341%;
+}
+
+.item-table-type {
+    width: 25.44715%;
+    float: left;
+    margin-right: 1.46341%;
+}
+
+.item-table-materials {
+    width: 15.44715%;
+    float: right;
+    margin-right: 0;
+}
+
+.item-table-title, .item-table-type, .item-table-materials, .item-table-date {
+	padding:10px 0 10px 0;
+	height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+/*.projects-content{
+	font-size:24px;
+	letter-spacing:0.7px;
+}*/
+
+div.hidden{
+	display:none;
+}
+
+/*.table-row{
+	color:#d0d1d4 !important;
+}
+
+.table-row:hover{
+	color:black;
+}
+*/
