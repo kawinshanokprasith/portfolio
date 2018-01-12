@@ -100,14 +100,14 @@ $(document).ready(function() {
 $(".projects-toggle").click(function() {
     $(".projects-expand").delay(200).fadeToggle(500);
     $(".projects-expand2").delay(200).fadeToggle(500);
-    $(".projects-expand").css('color','black')
-    $(".projects-expand2").css('color','black')
-    $(".projects-toggle").css('color','black')
-    $(".information-toggle").css('color','#818185')
-    $(".description-toggle").css('color','#818185')
-    $(".backtoimages").css('color','#818185')
-    $(".gallery").css({'filter':'blur(300px)'})
-    $(".projects").css({'filter':'blur(300px)'})
+    $(".projects-expand").css('color','black');
+    $(".projects-expand2").css('color','black');
+    $(".projects-toggle").css('color','black');
+    $(".information-toggle").css('color','#818185');
+    $(".description-toggle").css('color','#818185');
+    $(".backtoimages").css('color','#818185');
+    $(".gallery").css({'filter':'blur(40px)'});
+    $(".gallery").css('opacity',0.7);
     $(".information-expand").hide();
     $(".description-expand").hide();
     $(".exit-toggle").show();
@@ -128,13 +128,14 @@ $(".projects-toggle").click(function() {
 
 $(".information-toggle").click(function() {
     $(".information-expand").delay(200).fadeToggle(500);
-    $(".information-expand-expand").css('color','black')
-    $(".information-toggle").css('color','black')
-    $(".projects-toggle").css('color','#818185')
-    $(".description-toggle").css('color','#818185')
-    $(".backtoimages").css('color','#818185')
-    $(".gallery").css({'filter':'blur(300px)'})
-    $(".projects").css({'filter':'blur(300px)'})
+    $(".information-expand-expand").css('color','black');
+    $(".information-toggle").css('color','black');
+    $(".projects-toggle").css('color','#818185');
+    $(".description-toggle").css('color','#818185');
+    $(".backtoimages").css('color','#818185');
+    $(".gallery").css({'filter':'blur(40px)'});
+    // $(".projects").css({'filter':'blur(60px)'});
+    $(".gallery").css('opacity',0.7);
     $(".projects-expand").hide();
     $(".projects-expand2").hide();
     $(".description-expand").hide();
@@ -145,23 +146,25 @@ $(".information-toggle").click(function() {
    
 $(".description-toggle").click(function() {
     $(".description-expand").delay(200).fadeToggle(500);
-    $(".description-expand").css('color','black')
-    $(".description-toggle").css('color','black')
-    $(".information-toggle").css('color','#818185')
-    $(".projects-toggle").css('color','#818185')
-    $(".backtoimages").css('color','#818185')
+    $(".description-expand").css('color','black');
+    $(".description-toggle").css('color','black');
+    $(".information-toggle").css('color','#818185');
+    $(".projects-toggle").css('color','#818185');
+    $(".backtoimages").css('color','#818185');
     $(".projects-expand").hide();
     $(".projects-expand2").hide();
     $(".information-expand").hide();
     $(".exit-toggle").show();
-    $(".gallery").css({'filter':'blur(300px)'})
+    $(".gallery").css({'filter':'blur(40px)'})
+    $(".gallery").css('opacity',0.7);
     $(".backtoimages").show();
     $(".slideButtons").hide();
 });
 
 $(".exit-toggle").click(function() {
-    $(".gallery").css({'filter':'blur(0px)'})
-    $(".projects").css({'filter':'blur(0px)'})
+    $(".gallery").css({'filter':'blur(0px)'});
+    $(".gallery").css('opacity',1);
+    // $(".projects").css({'filter':'blur(0px)'});
     $(".projects-expand").hide();
     $(".projects-expand2").hide();
     $(".information-expand").hide();
@@ -172,8 +175,9 @@ $(".exit-toggle").click(function() {
 });
 
 $(".backtoimages").click(function() {
-    $(".gallery").css({'filter':'blur(0px)'})
-    $(".projects").css({'filter':'blur(0px)'})
+    $(".gallery").css({'filter':'blur(0px)'});
+    $(".gallery").css('opacity',1);
+    // $(".projects").css({'filter':'blur(0px)'});
     $(".projects-expand").hide();
     $(".projects-expand2").hide();
     $(".information-expand").hide();
