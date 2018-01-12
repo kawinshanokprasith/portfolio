@@ -172,6 +172,7 @@ $(".exit-toggle").click(function() {
     $(".description-expand").hide();
     $(".backtoimages").hide();
     $(".slideButtons").show();
+    $(".description-toggle").css('color','#818185');
 });
 
 $(".backtoimages").click(function() {
@@ -185,6 +186,7 @@ $(".backtoimages").click(function() {
     $(".description-expand").hide();
     $(".backtoimages").hide();
     $(".slideButtons").show();
+    $(".description-toggle").css('color','#818185');
 });
 
 // ======== Image Slider ========= //
